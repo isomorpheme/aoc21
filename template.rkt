@@ -3,10 +3,10 @@
 (require racket/undefined)
 
 (define day "xx")
+(define input-path (string-append day ".in.txt"))
+; (define input-path (string-append day ".ex.txt"))
 
-(define input
-  (let ([s (port->string (open-input-file (string-append day ".in.txt")) #:close? #t)])
-    (map string->number (string-split s))))
+(define input undefined)
 
 (define part1 undefined)
 
